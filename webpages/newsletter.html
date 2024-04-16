@@ -1,0 +1,160 @@
+<!--
+     PROJECT - 2
+     Dhruv Modi (N01649493)
+     Kush Pandya (N01656835)
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Home</title>
+     <link rel="stylesheet" href="/css/style.css">
+     <link rel="icon" type="image/x-icon" href="/img/car.png">
+ </head>
+ 
+ <body>
+     <header>
+         <img id="heroimg" src="/img/bg.jpg" alt="Cars">
+         <h1><a href="/index.html">Top Cars Under $30K</a></h1><br>
+         <h1 class="head2"><a href="/index.html">Top cars on a budget!!!</a></h1>
+     </header>
+ 
+     <nav>
+         <ul>
+            <li><a href="/index.html">Home</a></li>
+             <li><a href="/webpages/review.html">Reviews</a></li>
+             <li><a href="./webpages/aboutus.html">About Us</a></li>
+             <!-- <li><a href="/webpages/newsletter.html">Newsletter</a></li> -->
+            <li><a href="/webpages/rent.html">Rent</a></li>
+
+         </ul>
+     </nav>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+    }
+    h1 {
+        color: #333;
+    }
+    p {
+        color: #666;
+    }
+    form {
+        margin-top: 20px;
+        position: relative;
+    }
+    input[type="email"] {
+        padding: 10px;
+        width: 250px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #a89784;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .message {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #28a745;
+        color: #fff;
+        border-radius: 5px;
+        display: none;
+    }
+    .message.show {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .animated {
+        animation: fadeIn 0.5s;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Subscribe to Our Newsletter</h1>
+    <p>Stay updated with our latest news and offers!</p>
+    <form id="newsletterForm">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" value="Subscribe">
+    </form>
+    <div class="message" id="message"></div>
+</div>
+
+<footer>
+    <div id="footer_content">
+        <div id="address">
+            <address id="add">
+                <h3>Address</h3>
+                402 Marine Drive <br>
+                Mehsana,Gujarat G2J R4T, India
+                <br>
+                <p class="desktop">Phone:<a href="tel:+1-226-386-0000">226-386-0000</a></p></br>
+                <!-- <p class="mobile">Phone:<a href="tel:+1-226-386-0000">226-386-0000</a></p> -->
+                <!-- <p class="mobile">Email:<a href="mailto:helpergardern@green.com">helpergardern@green.com</a></p> -->
+                <p class="desktop">Email:<a href="mailto:helpcarrent@gmail.com">helpcarrent@gmail.com</a></p>
+            </address>
+        </div>
+        <div id="socials">
+            <p>Lets get connect:</p>
+            <ul>
+                <li><a href="#">Facebook</a></li></br>
+                <li><a href="#">Twitter</a></li></br>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer_copyright">
+        &copy; 2024 Your Website. All rights reserved.
+    </div>
+</footer>
+<script>
+    const form = document.getElementById('newsletterForm');
+    const message = document.getElementById('message');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.email.value;
+
+        // Simulate form submission
+        setTimeout(() => {
+            message.innerText = `Thank you for subscribing, ${email}!`;
+            message.classList.add('show', 'animated');
+        }, 1000);
+    });
+</script>
+</body>
+</html>

@@ -764,6 +764,10 @@ form button:hover {
     	transform: translatez(0);
 }
 
+.bx-viewport{
+    width: 70%;
+}
+
 #slider img{
     height: auto;
     border-radius: 2%;
@@ -773,6 +777,7 @@ form button:hover {
     padding-top: 5%;
     border: #333 solid;
     border-radius: 2%;
+    background-color: #a89784;
 }
 
 .bx-wrapper .bx-pager,
@@ -865,6 +870,7 @@ form button:hover {
 	height: 32px;
 	text-indent: -9999px;
 	z-index: 9999;
+    margin-right: 7px;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
@@ -939,7 +945,7 @@ form button:hover {
 }
 
 .bx-wrapper{
-    max-width: 800px;
+    max-width: 556px;
 }
 
 #slider {
@@ -948,6 +954,13 @@ form button:hover {
 }
 
 #slider img{
-    height: 20%;
+    height: 10%;
 }
 
+h2{
+    color: #bc8c55;
+    margin-bottom: 22px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #f0d6b9;
+}
