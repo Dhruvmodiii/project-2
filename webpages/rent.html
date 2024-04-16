@@ -1,0 +1,84 @@
+<!--
+     PROJECT - 2
+     Dhruv Modi (N01649493)
+     Kush Pandya (N01656835)
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental </title>
+    <link rel="stylesheet" href="/css/style.css"> 
+</head>
+<body>
+    <header>
+        <img id="heroimg" src="/img/bg.jpg" alt="Cars">
+         <h1><a href="/index.html">Top Cars Under $30K</a></h1><br>
+         <h1 class="head2"><a href="/index.html">Top cars on a budget!!!</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/webpages/review.html">Reviews</a></li>
+            <li><a href="/webpages/aboutus.html">About</a></li>
+            <!-- <li><a href="/webpages/newsletter.html">Newsletter</a></li> -->
+            <!-- <li><a href="/webpages/rent.html">Rent</a></li> -->
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Car Rental </h2>
+        <form id="rentalForm" action="/submit_rental.php" method="post">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="pickupDate">Pickup Date:</label>
+            <input type="date" id="pickupDate" name="pickupDate" required>
+
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" name="returnDate" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="address">
+                <address id="add">
+                    <h3>Address</h3>
+                    402 Marine Drive <br>
+                    Mehsana,Gujarat G2J R4T, India
+                    <br>
+                    <p class="desktop">Phone:<a href="tel:+1-226-386-0000">226-386-0000</a></p></br>
+                    <!-- <p class="mobile">Phone:<a href="tel:+1-226-386-0000">226-386-0000</a></p> -->
+                    <!-- <p class="mobile">Email:<a href="mailto:helpergardern@green.com">helpergardern@green.com</a></p> -->
+                    <p class="desktop">Email:<a href="mailto:helpcarrent@gmail.com">helpcarrent@gmail.com</a></p>
+                </address>
+            </div>
+            <div id="socials">
+                <p>Lets get connect:</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li></br>
+                    <li><a href="#">Twitter</a></li></br>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &copy; 2024 Your Website. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
